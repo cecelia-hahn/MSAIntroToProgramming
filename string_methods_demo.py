@@ -51,9 +51,20 @@ def main():
             dog_index += 1
     print(f"Number of dogs: {number_of_dogs}")
     
-    #how to use the split method
+    #how to use the split method, stores in list
     car_info = "Ferrari, F-50, 2021, 500000, 4.8"
     car_data = car_info.split(",")
     print(car_data)
+
+    #get the individual items from the resulting list
+    car_make = car_data[0]
+    car_model = car_data[1]
+    car_year = int(car_data[2])
+    car_price = float(car_data[3])
+    engine_size = float(car_data[4])
+
+    print("\nCar Information\n---------------")
+    print(f"Make: {car_make} -- Model: {car_model}")
+    print(f"Year: {car_year} -- Price: {car_price} -- Engine: {engine_size}")
 
 main()
